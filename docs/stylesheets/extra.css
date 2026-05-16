@@ -1,0 +1,78 @@
+/* DIY Pallet Project Guide — warm Absolutely Plausible palette */
+
+:root {
+  --md-primary-fg-color: #d4621a;
+  --md-primary-fg-color--light: #e0824a;
+  --md-primary-fg-color--dark: #9c5220;
+  --md-accent-fg-color: #d4621a;
+  --md-default-bg-color: #f0eeeb;
+  --md-default-fg-color: #2c2924;
+  --md-typeset-a-color: #d4621a;
+}
+
+body {
+  background: #f0eeeb;
+  color: #2c2924;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', monospace;
+}
+
+.md-header,
+.md-tabs {
+  background: #2c2924;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: #9c5220;
+  font-weight: 700;
+}
+
+.md-typeset h1 {
+  border-bottom: 2px solid #d4621a;
+  padding-bottom: 0.4em;
+}
+
+.md-typeset a {
+  color: #d4621a;
+}
+
+.md-typeset a:hover {
+  color: #9c5220;
+}
+
+.md-typeset code {
+  background: #f8f6f3;
+  color: #6b3310;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+}
+
+.md-typeset table:not([class]) {
+  background: #fff;
+  border: 1px solid #d4621a;
+}
+
+.md-typeset table:not([class]) th {
+  background: #f8f6f3;
+  color: #2c2924;
+}
+
+.md-typeset img {
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.12);
+}
+
+/* Step number badge */
+.step-badge {
+  display: inline-block;
+  background: #d4621a;
+  color: #fff;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8em;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-right: 0.4em;
+}

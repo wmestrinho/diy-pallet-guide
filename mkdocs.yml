@@ -1,0 +1,55 @@
+site_name: DIY Pallet Project Guide
+site_description: A practical, open guide to building things from reclaimed pallets — how to source pallets safely, the tools you need, the step-by-step process, and a full worked example.
+site_author: Absolutely Plausible
+site_url: https://example.com/
+
+repo_name: diy-pallet-guide
+repo_url: https://github.com/wmestrinho/diy-pallet-guide
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  font:
+    text: Share Tech Mono
+    code: Share Tech Mono
+  features:
+    - navigation.top
+    - navigation.instant
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+copyright: "v0.1.0 beta · A guide by Absolutely Plausible · CC BY-NC 4.0"
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Start Here: index.md
+  - The Basics: basics.md
+  - The Process: process.md
+  - Worked Example — DJ Pallet Table: dj-pallet-table.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - toc:
+      permalink: true
