@@ -30,9 +30,11 @@ extra_css:
 
 nav:
   - Start Here: index.md
+  - Quick Start Checklist: start-a-project-checklist.md
   - The Basics: basics.md
   - The Process: process.md
   - Worked Example — DJ Pallet Table: dj-pallet-table.md
+  - Worked Example Template: worked-example-template.md
 
 markdown_extensions:
   - attr_list
