@@ -23,8 +23,7 @@ mkdocs build   # build to site/
 - `docs/process.md` — The 9-step process, with a flow graph
 - `docs/dj-pallet-table.md` — Worked example: the DJ Pallet Table mapped to the process
 
-Photos in `docs/assets/` are a curated subset from the DJ Pallet Table build
-(full set lives in the private `ap-team-workspace` repo).
+Photos in `docs/assets/` — all 33 from the DJ Pallet Table build (migrated from ap-team-workspace, May 2026).
 
 ## Conventions
 
