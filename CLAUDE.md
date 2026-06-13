@@ -40,7 +40,7 @@ Photos in `docs/assets/` — all 33 from the DJ Pallet Table build (migrated fro
 
 ## Pending
 
-- [ ] Decide a public domain / subdomain; update `site_url` in `mkdocs.yml`
-- [ ] Cloudflare Pages project + deploy
+- [x] Decide a public domain / subdomain; update `site_url` in `mkdocs.yml` → `https://diy-pallet-guide.pages.dev/`
+- [x] Cloudflare Pages project + deploy → project `diy-pallet-guide`, account `Wmestrinho@live.com`
 - [ ] Add the DJ Pallet Table final install photos when the build completes
 - [ ] Consider adding more worked examples as AP completes more pallet builds
