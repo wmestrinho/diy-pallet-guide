@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+<!--
+  Adds Open Graph + Twitter Card meta to every page using each page's own
+  title/description front-matter. Dependency-free (no social-cards plugin).
+-->
+{% block extrahead %}
+  {% set page_title = config.site_name %}
+  {% if page and page.title and not page.is_homepage %}
+    {% set page_title = page.title ~ " — " ~ config.site_name %}
+  {% endif %}
+  {% set page_description = config.site_description %}
+  {% if page and page.meta and page.meta.description %}
+    {% set page_description = page.meta.description %}
+  {% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  {% if page and page.canonical_url %}
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  {% endif %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description }}">
+{% endblock %}

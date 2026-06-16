@@ -1,13 +1,14 @@
 site_name: DIY Pallet Project Guide
 site_description: A practical, open guide to building things from reclaimed pallets — how to source pallets safely, the tools you need, the step-by-step process, and a full worked example.
 site_author: Absolutely Plausible
-site_url: https://diy-pallet-guide.pages.dev/
+site_url: https://diy.recyclopedia.cc/
 
 repo_name: diy-pallet-guide
 repo_url: https://github.com/wmestrinho/diy-pallet-guide
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     scheme: default
     primary: custom
@@ -30,12 +31,10 @@ extra_css:
 
 nav:
   - Start Here: index.md
-  - Quick Start Checklist: start-a-project-checklist.md
-  - Project Scope Template: project-scope-template.md
   - The Basics: basics.md
   - The Process: process.md
   - Worked Example — DJ Pallet Table: dj-pallet-table.md
-  - Worked Example Template: worked-example-template.md
+  - Quick Start Checklist: start-a-project-checklist.md
 
 markdown_extensions:
   - attr_list
