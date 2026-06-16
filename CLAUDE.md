@@ -36,7 +36,7 @@ Photos in `docs/assets/` — all 33 from the DJ Pallet Table build (migrated fro
 ## Versioning
 
 - `VERSION` file at repo root; keep `copyright` in `mkdocs.yml` in sync
-- Current: `v0.1.0 beta`
+- Current: `v0.3.0 beta`
 
 ## Pending
 
