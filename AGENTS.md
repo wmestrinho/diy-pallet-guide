@@ -20,7 +20,7 @@ Required baseline for AI agents
 
 Version rule
 - Single source of truth: `VERSION` unless this repo already documents another version source in `README.md` or `CLAUDE.md`.
-- Current baseline version: `v0.2.0 beta`
+- Current baseline version: `v0.3.0 beta`
 - Web UIs must visibly display the version.
 - Bump version for behavior/UI changes.
 

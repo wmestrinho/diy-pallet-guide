@@ -1,1 +1,5 @@
-mkdocs-material
+# Pinned for reproducible builds (local + Cloudflare Pages).
+# mkdocs-material 9.x requires mkdocs 1.x; the explicit mkdocs<2 pin guards
+# against a future MkDocs 2.0 (which Material does not support) breaking CI.
+mkdocs>=1.6,<2
+mkdocs-material==9.7.3

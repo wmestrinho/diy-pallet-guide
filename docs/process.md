@@ -101,3 +101,5 @@ Pallet projects almost always take **longer than expected** — deconstruction a
 ---
 
 See the whole process applied to a real build: **[Worked Example — DJ Pallet Table →](dj-pallet-table.md)**
+
+About to start your own? Run the **[Quick Start Checklist →](start-a-project-checklist.md)** first.

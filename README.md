@@ -6,7 +6,7 @@ A guide by **Absolutely Plausible**. Licensed [CC BY-NC 4.0](https://creativecom
 
 ## Status
 
-`v0.2.0 beta` — initial guide. Not yet deployed to a public domain (see `CLAUDE.md`).
+`v0.2.0 beta` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
 
 ## Local development
 
@@ -19,12 +19,18 @@ Open `http://localhost:8000`.
 
 ## Structure
 
+Published pages (in `docs/`, visitor-facing):
+
 - `docs/index.md` — Start here
-- `docs/start-a-project-checklist.md` — Quick pre-build checklist
 - `docs/basics.md` — Sourcing, safety, tools, wood prep
 - `docs/process.md` — The 9-step process
 - `docs/dj-pallet-table.md` — Worked example
-- `docs/worked-example-template.md` — Standard template for future worked examples
+- `docs/start-a-project-checklist.md` — Quick pre-build checklist
+
+Internal authoring docs (in `internal/`, kept in the repo, not published):
+
+- `internal/worked-example-template.md` — Standard template for future worked examples
+- `internal/project-scope-template.md` — Client scope / valuation template
 
 ---
 

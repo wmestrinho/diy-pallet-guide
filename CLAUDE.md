@@ -36,11 +36,11 @@ Photos in `docs/assets/` — all 33 from the DJ Pallet Table build (migrated fro
 ## Versioning
 
 - `VERSION` file at repo root; keep `copyright` in `mkdocs.yml` in sync
-- Current: `v0.1.0 beta`
+- Current: `v0.3.0 beta`
 
 ## Pending
 
-- [x] Decide a public domain / subdomain; update `site_url` in `mkdocs.yml` → `https://diy-pallet-guide.pages.dev/`
+- [x] Decide a public domain / subdomain; update `site_url` in `mkdocs.yml` → `https://diy.recyclopedia.cc/` (custom domain; `diy-pallet-guide.pages.dev` is the underlying Pages URL)
 - [x] Cloudflare Pages project + deploy → project `diy-pallet-guide`, account `Wmestrinho@live.com`
 - [ ] Add the DJ Pallet Table final install photos when the build completes
 - [ ] Consider adding more worked examples as AP completes more pallet builds
