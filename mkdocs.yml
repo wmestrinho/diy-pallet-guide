@@ -24,7 +24,7 @@ theme:
     - search.suggest
     - content.code.copy
 
-copyright: "v0.3.0 beta · A guide by Absolutely Plausible · CC BY-NC 4.0"
+copyright: "v0.3.0 · A guide by Absolutely Plausible · CC BY-NC 4.0"
 
 extra_css:
   - stylesheets/extra.css

@@ -134,11 +134,15 @@ Table fully assembled, surfaces refined, cutout marked. What's left is the final
 
 ---
 
-## Step 9 · Install — *pending*
+## Step 9 · Install — Commission Beer Chamber
 
 <span class="step-badge">9</span>
 
-Still ahead: confirm the mixer's exact dimensions off the actual unit (Juni Ali is bringing it to the venue), cut the recess, seal the wood for outdoor use, and install on the patio. The build isn't documented as complete until it's photographed in place and in use.
+The final step: cut the mixer recess to the confirmed dimensions, seal the wood for outdoor use, and install the table on the patio at **Commission Beer Chamber** in Orlando's Hourglass District.
+
+The table's first night in service is at **Vinyl Ages** — a weekly Monday event where anyone with a record and the courage to sign up gets a 15-minute open DJ set. No credentials required. Show up, spin, leave it on the floor.
+
+That's exactly the kind of project this table was built for.
 
 ---
 
@@ -178,16 +182,5 @@ gantt
     Install at CBC patio     :crit, inst, after mc, 1d
     Capture install + content:crit, cap, after inst, 2d
 ```
-
-## Completion checklist
-
-- [x] Confirm mixer selection — done, confirmed with Juni Ali (2026-05-16)
-- [ ] Take final measurements off the actual mixer at Commission Beer Chamber
-- [ ] Cut the mixer recess (irreversible — measure twice)
-- [ ] Install at Commission Beer Chamber patio
-- [ ] Capture installed + in-use photos (table with mixer + DJ at work)
-- [ ] Curate 3–5 strongest shots for Instagram / LinkedIn
-
----
 
 ← Back to **[The Process](process.md)** · **[Start Here](index.md)**

@@ -20,7 +20,17 @@
   {% if page and page.canonical_url %}
   <meta property="og:url" content="{{ page.canonical_url }}">
   {% endif %}
-  <meta name="twitter:card" content="summary">
+  {% if page and page.meta and page.meta.og_image %}
+  <meta property="og:image" content="{{ page.meta.og_image }}">
+  {% else %}
+  <meta property="og:image" content="{{ config.site_url }}assets/IMG_4963.jpg">
+  {% endif %}
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page_title }}">
   <meta name="twitter:description" content="{{ page_description }}">
+  {% if page and page.meta and page.meta.og_image %}
+  <meta name="twitter:image" content="{{ page.meta.og_image }}">
+  {% else %}
+  <meta name="twitter:image" content="{{ config.site_url }}assets/IMG_4963.jpg">
+  {% endif %}
 {% endblock %}
