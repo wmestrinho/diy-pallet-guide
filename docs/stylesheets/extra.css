@@ -63,6 +63,92 @@ body {
   box-shadow: 0 1px 8px rgba(30,34,56,0.12);
 }
 
+/* Horizontal build timeline */
+.build-timeline {
+  display: flex;
+  overflow-x: auto;
+  position: relative;
+  padding: 0.5rem 0 1rem;
+  margin: 1.75rem 0 2rem;
+  gap: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.build-timeline::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #3f7d9c;
+  opacity: 0.35;
+}
+
+.tl-step {
+  flex: 1;
+  min-width: 88px;
+  text-align: center;
+  padding-top: 2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  position: relative;
+}
+
+.tl-step::before {
+  content: '';
+  position: absolute;
+  top: calc(1rem - 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #3f7d9c;
+  z-index: 1;
+}
+
+.tl-step.pending::before {
+  background: #eef0f2;
+  border: 2px dashed #3f7d9c;
+}
+
+.tl-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #1e2238;
+  line-height: 1.3;
+}
+
+.tl-date {
+  font-size: 0.63rem;
+  color: #4b5fa8;
+  margin-top: 0.2rem;
+  opacity: 0.85;
+}
+
+/* Photo thumbnail grid */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.photo-grid p {
+  display: contents;
+  margin: 0;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0 1px 6px rgba(30,34,56,0.14);
+}
+
 /* Step number badge */
 .step-badge {
   display: inline-block;

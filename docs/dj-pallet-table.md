@@ -20,6 +20,41 @@ The clearest way to learn the process is to watch it run on a real project. This
 | **Photos** | 33 archived |
 | **Status** | Near-final — mixer cutout confirmed, final cut + install pending |
 
+<div class="build-timeline">
+  <div class="tl-step done">
+    <div class="tl-label">Sourcing</div>
+    <div class="tl-date">Apr 15</div>
+  </div>
+  <div class="tl-step done">
+    <div class="tl-label">Frame</div>
+    <div class="tl-date">Apr 21</div>
+  </div>
+  <div class="tl-step done">
+    <div class="tl-label">Frame dev</div>
+    <div class="tl-date">Apr 28</div>
+  </div>
+  <div class="tl-step done">
+    <div class="tl-label">Top surface</div>
+    <div class="tl-date">May 6</div>
+  </div>
+  <div class="tl-step done">
+    <div class="tl-label">Joinery</div>
+    <div class="tl-date">May 8</div>
+  </div>
+  <div class="tl-step done">
+    <div class="tl-label">Finishing</div>
+    <div class="tl-date">May 11</div>
+  </div>
+  <div class="tl-step done">
+    <div class="tl-label">Near-final</div>
+    <div class="tl-date">May 14</div>
+  </div>
+  <div class="tl-step pending">
+    <div class="tl-label">Install</div>
+    <div class="tl-date">Jun 29</div>
+  </div>
+</div>
+
 The build maps cleanly onto the [9-step process](process.md). Here it is, step by step.
 
 ---
@@ -30,9 +65,11 @@ The build maps cleanly onto the [9-step process](process.md). Here it is, step b
 
 Pallets collected and checked for safety before anything else. Raw pallets, stacked, before a single cut — every one inspected against the [safety flow](basics.md#safety-which-pallets-are-safe).
 
+<div class="photo-grid" markdown="1">
 ![Raw reclaimed pallets stacked before the build begins](assets/IMG_4768.jpg)
 ![Pallet selection on-site](assets/IMG_4783.jpg)
 ![More raw material — full stack before work begins](assets/IMG_4784.jpg)
+</div>
 
 **Takeaway:** the project starts as a pile of free wood. Everything good comes from the prep that follows.
 
@@ -52,9 +89,11 @@ Pallets broken down into boards, nails removed, wood sorted and cleaned. (Decons
 
 The build started with the **structural frame** — the skeleton that everything else attaches to. Caster wheels were planned in from the start, so the piece would be mobile.
 
+<div class="photo-grid" markdown="1">
 ![The frame skeleton with caster wheels, early in the build](assets/IMG_4836.jpg)
 ![Frame assembly — first structure at the venue](assets/IMG_4837.jpg)
 ![Frame positioned on the Commission Beer Chamber patio](assets/IMG_4842.jpg)
+</div>
 
 **Takeaway:** build the structure first. The frame defines every measurement that follows. Hardware like wheels gets designed in early, not bolted on as an afterthought.
 
@@ -66,17 +105,21 @@ The build started with the **structural frame** — the skeleton that everything
 
 Frame developed on-site: vertical supports, cross-members, the load-bearing structure taking shape.
 
+<div class="photo-grid" markdown="1">
 ![Frame developing — pieces laid out for fitting](assets/IMG_4886.jpg)
 ![Vertical and cross-bracing members forming](assets/IMG_4888.jpg)
 ![Frame structure growing on-site](assets/IMG_4892.jpg)
 ![Cross-bracing detail](assets/IMG_4893.jpg)
+</div>
 
 Then the **top surface** — pallet boards cut and laid to form the table top.
 
+<div class="photo-grid" markdown="1">
 ![Top surface starting to take shape](assets/IMG_4916.jpg)
 ![Slatted tabletop boards coming together](assets/IMG_4918.jpg)
 ![Top surface progressing](assets/IMG_4919.jpg)
 ![The top surface coming together](assets/IMG_4922.jpg)
+</div>
 
 **Takeaway:** structure before surface. A solid frame first, then the parts people see and touch.
 
@@ -88,6 +131,7 @@ Then the **top surface** — pallet boards cut and laid to form the table top.
 
 The biggest push of the build — internal supports, cross-bracing, the carpentry that makes a table rigid instead of wobbly.
 
+<div class="photo-grid" markdown="1">
 ![Joinery push — internal supports going in](assets/IMG_4927.jpg)
 ![Cross-bracing detail](assets/IMG_4929.jpg)
 ![Structural carpentry in progress](assets/IMG_4930.jpg)
@@ -96,6 +140,7 @@ The biggest push of the build — internal supports, cross-bracing, the carpentr
 ![Joinery push — late session](assets/IMG_4937.jpg)
 ![Bracing complete](assets/IMG_4938.jpg)
 ![Joinery near-complete](assets/IMG_4939.jpg)
+</div>
 
 **Takeaway:** rigidity comes from bracing. Anywhere a piece could rack or wobble, a brace goes in.
 
@@ -107,6 +152,7 @@ The biggest push of the build — internal supports, cross-bracing, the carpentr
 
 The DJ table has one feature an ordinary table doesn't: a **recessed cutout** sized to hold a DJ mixer. That cutout was laid out directly on the finished top — measured, marked in pencil, checked against the equipment's real dimensions.
 
+<div class="photo-grid" markdown="1">
 ![Finishing details — surface refinement](assets/IMG_4945.jpg)
 ![Surface work in progress](assets/IMG_4947.jpg)
 ![Detail finishing](assets/IMG_4948.jpg)
@@ -115,6 +161,7 @@ The DJ table has one feature an ordinary table doesn't: a **recessed cutout** si
 ![Cutout marked, ready for the final cut](assets/IMG_4956.jpg)
 ![Surface and cutout layout](assets/IMG_4958.jpg)
 ![Final layout detail](assets/IMG_4959.jpg)
+</div>
 
 **Takeaway:** when a build has to fit a specific piece of equipment, **measure the equipment, not a spec sheet** — and lay the cut out on the actual surface before committing. A cut like this is irreversible. This is exactly why Step 5 (Design & Measure) says *measure twice*.
 
@@ -126,9 +173,11 @@ The DJ table has one feature an ordinary table doesn't: a **recessed cutout** si
 
 Table fully assembled, surfaces refined, cutout marked. What's left is the final cut and the seal.
 
+<div class="photo-grid" markdown="1">
 ![The near-final DJ Pallet Table](assets/IMG_4960.jpg)
 ![Near-final — side view](assets/IMG_4961.jpg)
 ![Near-final state — table complete except for mixer recess](assets/IMG_4963.jpg)
+</div>
 
 **Takeaway:** a build reaches "near-final" before it reaches "done." The last 10% — a precise cut, a finish coat, the install — is its own phase. Don't rush it.
 
@@ -158,29 +207,5 @@ That's exactly the kind of project this table was built for.
 | Install | "Near-final" is not "done" — the last phase is its own work |
 
 ---
-
-## Full build timeline
-
-```mermaid
-gantt
-    title DJ Pallet Table — Build Phases
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %d
-
-    section Done
-    Sourcing pallets        :done, src, 2026-04-15, 2d
-    Frame skeleton          :done, frm, 2026-04-21, 1d
-    Frame development       :done, frd, 2026-04-28, 2d
-    Top surface assembly    :done, top, 2026-05-06, 1d
-    Joinery push            :done, jp,  2026-05-08, 2d
-    Finishing & mixer layout:done, fin, 2026-05-11, 3d
-    Near-final state        :done, nf,  2026-05-14, 1d
-
-    section Pending
-    Mixer selection confirmed :done, dims, 2026-05-15, 2d
-    Mixer cutout (final cut) :crit, mc, after dims, 1d
-    Install at CBC patio     :crit, inst, after mc, 1d
-    Capture install + content:crit, cap, after inst, 2d
-```
 
 ← Back to **[The Process](process.md)** · **[Start Here](index.md)**
