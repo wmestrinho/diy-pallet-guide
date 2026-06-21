@@ -1,0 +1,12 @@
+flowchart TD
+    A([Found a pallet]) --> B{Colored blue, red,<br/>or brown?}
+    B -->|Yes| X1[STOP - rental property.<br/>Owned by a pool company.<br/>Taking it is theft.]
+    B -->|No / plain wood| C{IPPC stamp present?}
+    C -->|No stamp| D[Likely domestic, untreated.<br/>Lower risk - inspect closely.]
+    C -->|Has a stamp| E{Treatment code?}
+    E -->|HT / KD / DB| F[Treatment is safe]
+    E -->|MB| X2[STOP - Methyl Bromide.<br/>Toxic fumigant. Do not use.]
+    D --> G{Stains, oily patches,<br/>chemical smell?}
+    F --> G
+    G -->|Yes| X3[STOP - contaminated.<br/>Unknown cargo residue.]
+    G -->|No| H([Safe to use])

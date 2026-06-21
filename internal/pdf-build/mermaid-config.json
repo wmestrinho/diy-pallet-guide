@@ -1,0 +1,11 @@
+{
+  "theme": "base",
+  "themeVariables": {
+    "primaryColor": "#eef0f2",
+    "primaryTextColor": "#1e2238",
+    "primaryBorderColor": "#3f7d9c",
+    "lineColor": "#3f7d9c",
+    "fontFamily": "Share Tech Mono, monospace",
+    "fontSize": "16px"
+  }
+}

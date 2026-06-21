@@ -4,43 +4,37 @@ Guidance for Claude Code when working in this repository.
 
 ## What This Repo Is
 
-A **public-facing** (planned) DIY guide to building things from reclaimed pallets. Created by Absolutely Plausible as a free, shareable resource. Static MkDocs Material site.
+A **public** product landing page for a DIY pallet-furniture guide, by Absolutely Plausible. The site sells a $17 PDF (Gumroad); the page itself is plain hand-written HTML + CSS — no framework, no build step. The repo is **public on GitHub**, so the paid PDF is never committed.
 
-Intended to become a public resource — so it follows the AP SEO guidelines (good titles, meta descriptions, front-matter on every page).
+> MkDocs was retired in v0.4.0. The old `mkdocs.yml`, `overrides/`, `requirements.txt`, and the last built `site/` are archived under `internal/` for reference only — not served, not maintained.
 
-## Commands
+## Stack
 
-```bash
-pip install -r requirements.txt
-mkdocs serve   # local dev
-mkdocs build   # build to site/
-```
+- `index.html` + `style.css` at repo root — the landing page Cloudflare Pages serves directly (no build command, output dir `/`).
+- `docs/*.md` — the guide content. Still the **source of truth** for the PDF; no longer published as a website.
+- `internal/pdf-build/` — tooling that regenerates `guide.pdf` from `docs/*.md`. Run `bash internal/pdf-build/build.sh` (needs python-markdown, npx/mermaid-cli, sips, Chrome, ghostscript). Output `guide.pdf` is gitignored — it lives only locally + on Gumroad (`gumroad.com/l/ajfnh`).
 
 ## Content
 
-- `docs/index.md` — Start Here
-- `docs/basics.md` — Sourcing, safety (HT vs MB pallets), tools, wood prep
-- `docs/process.md` — The 9-step process, with a flow graph
-- `docs/dj-pallet-table.md` — Worked example: the DJ Pallet Table mapped to the process
-
-Photos in `docs/assets/` — all 33 from the DJ Pallet Table build (migrated from ap-team-workspace, May 2026).
+- `docs/index.md` — Start Here · `docs/basics.md` — sourcing, safety (HT vs MB), tools, prep
+- `docs/process.md` — the 9-step process (mermaid flow) · `docs/dj-pallet-table.md` — worked example
+- `docs/start-a-project-checklist.md` — Quick Start Checklist
+- Photos in `docs/assets/` — all 33 from the DJ Pallet Table build
 
 ## Conventions
 
-- Every page has YAML front-matter with `title` and `description` (SEO)
-- Graphs via `pymdownx.superfences` custom_fences (mermaid) — used only where a
-  graph genuinely clarifies (the safety decision flow, the process flow)
-- Warm Absolutely Plausible palette + Share Tech Mono
+- `index.html` carries the SEO + OG meta; `docs/*.md` keep YAML front-matter (`title`/`description`) as PDF metadata
+- Mermaid diagrams pre-rendered to PNG for the PDF (`internal/pdf-build/*.png`)
+- Absolutely Plausible palette (`#3f7d9c` / `#1e2238` / `#6a4f9e`) + Share Tech Mono
 - Licensed CC BY-NC 4.0
 
 ## Versioning
 
-- `VERSION` file at repo root; keep `copyright` in `mkdocs.yml` in sync
-- Current: `v0.3.0 beta`
+- `VERSION` file at repo root. Current: `v0.4.0`
 
 ## Pending
 
-- [x] Decide a public domain / subdomain; update `site_url` in `mkdocs.yml` → `https://diy.recyclopedia.cc/` (custom domain; `diy-pallet-guide.pages.dev` is the underlying Pages URL)
-- [x] Cloudflare Pages project + deploy → project `diy-pallet-guide`, account `Wmestrinho@live.com`
-- [ ] Add the DJ Pallet Table final install photos when the build completes
+- [ ] **Cloudflare Pages: remove the `mkdocs build` command, set output dir `/`** — the live site still serves the old MkDocs build; the landing page won't go live until this changes (dashboard task)
+- [ ] Upload `guide.pdf` to the Gumroad product + finalize its description
+- [ ] Add the DJ Pallet Table final install photos after the June 29 install (web grid + regenerate PDF)
 - [ ] Consider adding more worked examples as AP completes more pallet builds
