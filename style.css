@@ -513,10 +513,27 @@ body.gr {
 .gr-table tbody td:first-child { font-weight: 700; color: var(--primary); white-space: nowrap; }
 .gr-table tbody tr:last-child td { border-bottom: none; }
 
-/* Bottom CTA tweaks for the case-study page */
+/* Bottom CTA heading */
 .gr-cta-h { color: var(--white); font-size: 1.2rem; margin-bottom: 1.3rem; letter-spacing: 0.03em; }
-.gr-version { margin-top: 1.4rem; font-size: 0.74rem; color: #6b7280; letter-spacing: 0.05em; }
-.gr-version a { color: #a8b4c0; }
+
+/* Site footer — workspace Footer Standard (AP-owned public brand) */
+.site-footer {
+  background: var(--dark);
+  color: #a8b4c0;
+  text-align: center;
+  border-top: 3px solid var(--primary);
+  padding: 2.2rem 0 2.6rem;
+}
+.site-footer__inner p { margin: 0.4rem 0; font-size: 0.82rem; line-height: 1.5; }
+.site-footer a { color: var(--primary); }
+.site-footer a:hover { color: var(--white); }
+.site-footer .footer-license { color: #6b7280; }
+.site-footer .footer-version {
+  margin-top: 1rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  color: #6b7280;
+}
 
 @media (max-width: 760px) {
   .gr-hero-grid { grid-template-columns: 1fr; }
