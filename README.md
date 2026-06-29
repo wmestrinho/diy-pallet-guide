@@ -1,61 +1,68 @@
 # DIY Pallet Project Guide
 
-A practical, open guide to building things from reclaimed pallets — sourcing, safety, tools, the step-by-step process, and a full worked example.
+A practical, open guide to building things from reclaimed pallets — sourcing, safety, tools, and the repeatable 9-step process — sold as a $17 PDF, with a free worked-example case study online.
 
-A guide by **Absolutely Plausible**. Licensed [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+A project by **Absolutely Plausible**. Licensed [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Status
 
-`v0.2.0 beta` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
+`v0.5.0` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
 
-## Local development
+## What's here
 
-```bash
-pip install -r requirements.txt
-mkdocs serve
-```
+Two hand-written HTML pages, served directly by Cloudflare Pages (no build step, output dir `/`):
 
-Open `http://localhost:8000`.
+- **`index.html`** — landing page that sells the $17 PDF (Gumroad).
+- **`dj-pallet-table.html`** — free standalone case study: the DJ Pallet Table build, start to finish. Gumroad-style UI/UX recolored to the AP palette.
+- **`style.css`** — shared styles for both pages.
 
-## Structure
-
-Published pages (in `docs/`, visitor-facing):
+The **paid PDF** (the reusable method only) is built from `docs/*.md`:
 
 - `docs/index.md` — Start here
-- `docs/basics.md` — Sourcing, safety, tools, wood prep
+- `docs/basics.md` — Sourcing, safety (HT vs MB), tools, wood prep
 - `docs/process.md` — The 9-step process
-- `docs/dj-pallet-table.md` — Worked example
 - `docs/start-a-project-checklist.md` — Quick pre-build checklist
 
-Internal authoring docs (in `internal/`, kept in the repo, not published):
+`docs/` cleanly mirrors the PDF. The DJ Pallet Table worked example is **not** in the PDF — it lives at `dj-pallet-table.html`, with its archived markdown source at `internal/dj-pallet-table.md`.
 
-- `internal/worked-example-template.md` — Standard template for future worked examples
-- `internal/project-scope-template.md` — Client scope / valuation template
+## Local preview
+
+No build step — open the pages directly:
+
+```bash
+open index.html          # or dj-pallet-table.html
+```
+
+## Rebuilding the PDF
+
+```bash
+bash internal/pdf-build/build.sh
+```
+
+Needs python3 + python-markdown, npx (mermaid-cli), Google Chrome (headless print), and ghostscript. Output `guide.pdf` is **gitignored** — the repo is public, so the paid PDF lives only locally + on Gumroad (`gumroad.com/l/ajfnh`).
+
+## Internal / archived
+
+- `internal/dj-pallet-table.md` — archived markdown source of the web case study
+- `internal/pdf-build/` — PDF build tooling + pre-rendered diagrams
+- `internal/worked-example-template.md`, `internal/project-scope-template.md` — authoring templates
+- `internal/mkdocs.yml`, `internal/overrides/`, `internal/requirements.txt` — retired MkDocs setup (reference only, not served)
 
 ---
 
 ## AI Agent Handoff
 
-Canonical local path:
-- `/Users/wmestrinho/Workspace/Projects/diy-pallet-guide`
-
-Legacy local path:
-- `/Users/wmestrinho/.openclaw/workspace/projects/diy-pallet-guide`
+Canonical local path: `/Users/wmestrinho/Workspace/Projects/diy-pallet-guide`
 
 Before editing:
-- Read `AGENTS.md`.
+- Read `CLAUDE.md` (project instructions) and `AGENTS.md`.
 - Check `git status --short --branch`.
-- Preserve any project-specific instructions in `CLAUDE.md`.
 
-Deployment notes:
-- MkDocs static site. Build with `mkdocs build`; deploy according to repo/Cloudflare Pages settings.
+Conventions:
+- Plain hand-written HTML + CSS. No framework, no build step for the site.
+- Absolutely Plausible palette (`#3f7d9c` / `#1e2238` / `#6a4f9e` / `#eef0f2`) + Share Tech Mono.
+- The paid PDF is never committed (gitignored).
 
 Version rule:
-- Current baseline version: `v0.2.0 beta`
-- Keep version source documented.
-- Web UIs must visibly display the version.
-
-Validation:
-- Run `python3 scripts/validate_agent_baseline.py`.
-- Also run project-specific tests/builds when present.
-
+- Current baseline: `v0.5.0` (source: `VERSION` at repo root).
+- Bump on structural/content changes; keep `CLAUDE.md` and this README in sync.
