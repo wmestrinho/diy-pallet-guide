@@ -35,12 +35,13 @@ No prior woodworking experience assumed. If you can measure, cut, and drive a sc
 |---------|----------------|
 | **[The Basics](basics.md)** | Sourcing pallets, the safety knowledge (which pallets to NEVER use), tools, and wood prep |
 | **[The Process](process.md)** | The 9-step process that works for any pallet project, with a clear flow |
-| **[Worked Example](dj-pallet-table.md)** | A full real build — the DJ Pallet Table — mapped step by step against the process |
 | **[Quick Start Checklist](start-a-project-checklist.md)** | A fast pre-build checklist — safety, sourcing, tools, and a plan for your first work session |
 
 **Read the Basics first.** The safety section in particular is not optional — a small number of pallets are genuinely hazardous, and you need to know how to spot them before you pick anything up.
 
 When you've read the Basics and you're ready to go, run the **[Quick Start Checklist](start-a-project-checklist.md)** before your first cut.
+
+Want to see the whole process run on a real build? The **DJ Pallet Table** — a mobile DJ booth built entirely from reclaimed pallets — is documented free, start to finish, at **[diy.recyclopedia.cc/dj-pallet-table](https://diy.recyclopedia.cc/dj-pallet-table.html)**.
 
 ---
 

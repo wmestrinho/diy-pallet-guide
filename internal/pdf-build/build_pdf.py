@@ -14,8 +14,10 @@ BUILD = ROOT / "internal" / "pdf-build"
 ASSETS = (BUILD / "img").as_uri()        # compressed copies (see build.sh)
 DIAG = BUILD.as_uri()
 
-# order matters — this is the reading order of the PDF
-FILES = ["index", "basics", "process", "dj-pallet-table", "start-a-project-checklist"]
+# order matters — this is the reading order of the PDF.
+# The DJ Pallet Table worked example lives on the web (dj-pallet-table.html),
+# not in the paid PDF — the PDF is the reusable method only.
+FILES = ["index", "basics", "process", "start-a-project-checklist"]
 
 FRONTMATTER = re.compile(r"^---\n.*?\n---\n", re.DOTALL)
 HEAD_ANCHOR = re.compile(r"\s*\{\s*#[^}]+\}")               # strip { #anchor }
@@ -65,7 +67,7 @@ COVER = """
   <p class="cover-tag">Zero-waste &middot; 100% upcycled &middot; No filler</p>
   <div class="cover-meta">
     The 9-step process &middot; Safety decision flow &middot; Quick Start Checklist<br>
-    Full worked example &mdash; the DJ Pallet Table &middot; 33 photos
+    See it run on a real build &mdash; diy.recyclopedia.cc/dj-pallet-table
   </div>
   <div class="cover-foot">diy.recyclopedia.cc &middot; CC BY-NC 4.0</div>
 </section>

@@ -10,20 +10,18 @@ cd "$(dirname "$0")"
 ROOT="$(cd ../.. && pwd)"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
-echo "1/4  rendering mermaid diagrams -> PNG"
+echo "1/3  rendering mermaid diagrams -> PNG"
 npx -y @mermaid-js/mermaid-cli -i safety-flow.mmd  -o safety-flow.png  -c mermaid-config.json -b white -s 2
 npx -y @mermaid-js/mermaid-cli -i process-flow.mmd -o process-flow.png -c mermaid-config.json -b white -s 2
 
-echo "2/4  compressing the 33 build photos for print"
-mkdir -p img
-for f in "$ROOT"/docs/assets/IMG_*.jpg; do
-  sips -Z 1100 -s format jpeg -s formatOptions 60 "$f" --out "img/$(basename "$f")" >/dev/null
-done
+# Note: the 33 build photos are no longer embedded in the PDF — the DJ Pallet
+# Table worked example now lives on the web (dj-pallet-table.html). The PDF is
+# the reusable method only, so only the two diagrams above need rendering.
 
-echo "3/4  assembling print HTML"
+echo "2/3  assembling print HTML"
 python3 build_pdf.py
 
-echo "4/4  printing to PDF + compressing (ghostscript /ebook, 150dpi)"
+echo "3/3  printing to PDF + compressing (ghostscript /ebook, 150dpi)"
 "$CHROME" --headless --disable-gpu --no-pdf-header-footer --virtual-time-budget=15000 \
   --print-to-pdf="$ROOT/guide-raw.pdf" "file://$PWD/guide-print.html" 2>/dev/null
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH \
