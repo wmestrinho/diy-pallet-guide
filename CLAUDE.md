@@ -6,7 +6,7 @@ Guidance for Claude Code when working in this repository.
 
 A **public** product site for a DIY pallet-furniture guide, by Absolutely Plausible. Two hand-written HTML pages (no framework, no build step):
 
-1. **`index.html`** — landing page that sells the $17 PDF (Gumroad). The PDF is the **reusable method only**: sourcing, safety, tools, the 9-step process, the Quick Start Checklist.
+1. **`index.html`** — landing page that sells the $17 PDF (Stripe Payment Link; Gumroad stays live in parallel for 2 weeks post-cutover as fallback — see `ap-ops/docs/STRIPE-SETUP.md`). The PDF is the **reusable method only**: sourcing, safety, tools, the 9-step process, the Quick Start Checklist.
 2. **`dj-pallet-table.html`** — a **free** standalone case study: the DJ Pallet Table build, start to finish, mapped to the 9-step process. It's the proof that drives the sale, styled after Gumroad's product-page UI/UX recolored to the AP palette. **Not part of the PDF.**
 
 The repo is **public on GitHub**, so the paid PDF is never committed.
@@ -35,10 +35,11 @@ The repo is **public on GitHub**, so the paid PDF is never committed.
 
 ## Versioning
 
-- `VERSION` file at repo root. Current: `v0.5.0` (v0.5.0 split the DJ Pallet Table out of the PDF into its own free web page)
+- `VERSION` file at repo root. Current: `v0.6.0` (v0.6.0 swapped the buy buttons from Gumroad to a Stripe Payment Link + added `thanks.html`; v0.5.0 split the DJ Pallet Table out of the PDF into its own free web page)
 
 ## Pending
 
+- [ ] **Stripe cutover (this branch, `agent/mac-mini/stripe-buttons`):** replace `https://buy.stripe.com/REPLACE_ME` in `index.html` with the LIVE Payment Link before merging to main. Delivery is handled by the `ap-stripe-worker` Worker (private repo); after-payment redirect on the Payment Link goes to `/thanks`. Keep Gumroad live in parallel for 2 weeks, then retire.
 - [ ] **Cloudflare Pages: remove the `mkdocs build` command, set output dir `/`** — the live site still serves the old MkDocs build; the new pages won't go live until this changes (dashboard task)
 - [ ] Upload `guide.pdf` to the Gumroad product + finalize its description (the PDF is now the method only — no DJ chapter)
 - [ ] **`index.html` proof-line page count** — recompute after the next PDF rebuild and back-fill if you want a hard page count (currently described, not numbered)
