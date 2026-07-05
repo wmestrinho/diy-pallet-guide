@@ -1,20 +1,34 @@
 # DIY Pallet Project Guide
 
-A practical, open guide to building things from reclaimed pallets — sourcing, safety, tools, and the repeatable 9-step process — sold as a $17 PDF, with a free worked-example case study online.
+A practical, interactive course for building with reclaimed pallets: six free modules, five knowledge checks, saved progress, a Quick Start Checklist, and a real worked example. A printable $17 PDF is available separately.
 
 A project by **Absolutely Plausible**. Licensed [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Status
 
-`v0.5.0` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
+`v0.7.0` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
+
+## Deployment
+
+Cloudflare Pages serves the repository root with no build command. Pushes to
+`main` deploy automatically. The Pages output directory is `/`.
+
+## Validation
+
+```sh
+node --check course.js
+node --check docs/assets/pallet-quizzes.js
+python internal/scripts/validate_agent_baseline.py
+```
 
 ## What's here
 
 Two hand-written HTML pages, served directly by Cloudflare Pages (no build step, output dir `/`):
 
-- **`index.html`** — landing page that sells the $17 PDF (Gumroad).
+- **`index.html`** — interactive six-module course and the $17 printable-guide offer.
+- **`course.js`** — saved progress, checklist state, mobile navigation, and interactive quizzes.
 - **`dj-pallet-table.html`** — free standalone case study: the DJ Pallet Table build, start to finish. Gumroad-style UI/UX recolored to the AP palette.
-- **`style.css`** — shared styles for both pages.
+- **`style.css`** — shared LBG warm theme and responsive styles for both pages.
 
 The **paid PDF** (the reusable method only) is built from `docs/*.md`:
 
@@ -60,9 +74,9 @@ Before editing:
 
 Conventions:
 - Plain hand-written HTML + CSS. No framework, no build step for the site.
-- Absolutely Plausible palette (`#3f7d9c` / `#1e2238` / `#6a4f9e` / `#eef0f2`) + Share Tech Mono.
+- LBG warm editorial theme: Newsreader + Hanken Grotesk, with Share Tech Mono reserved for labels.
 - The paid PDF is never committed (gitignored).
 
 Version rule:
-- Current baseline: `v0.5.0` (source: `VERSION` at repo root).
+- Current baseline: `v0.7.0` (source: `VERSION` at repo root).
 - Bump on structural/content changes; keep `CLAUDE.md` and this README in sync.

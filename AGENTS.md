@@ -20,15 +20,15 @@ Required baseline for AI agents
 
 Version rule
 - Single source of truth: `VERSION` unless this repo already documents another version source in `README.md` or `CLAUDE.md`.
-- Current baseline version: `v0.3.0`
+- Current baseline version: `v0.7.0`
 - Web UIs must visibly display the version.
 - Bump version for behavior/UI changes.
 
 Deployment
-- MkDocs static site. Build with `mkdocs build`; deploy according to repo/Cloudflare Pages settings.
+- Static HTML/CSS/JS site. Cloudflare Pages serves the repository root with no build command.
 
 Validation
-- Run: `python3 scripts/validate_agent_baseline.py`
+- Run: `python internal/scripts/validate_agent_baseline.py`
 - Also run any project-specific test/build/validation commands documented in `README.md`, `CLAUDE.md`, package scripts, or CI workflows.
 
 Coordination warning

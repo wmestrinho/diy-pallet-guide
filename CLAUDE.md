@@ -4,9 +4,9 @@ Guidance for Claude Code when working in this repository.
 
 ## What This Repo Is
 
-A **public** product site for a DIY pallet-furniture guide, by Absolutely Plausible. Two hand-written HTML pages (no framework, no build step):
+A **public** interactive pallet-building course and product site by Absolutely Plausible. Two hand-written HTML pages (no framework, no build step):
 
-1. **`index.html`** — landing page that sells the $17 PDF (Gumroad). The PDF is the **reusable method only**: sourcing, safety, tools, the 9-step process, the Quick Start Checklist.
+1. **`index.html`** — free six-module course with saved progress, five knowledge checks, a Quick Start Checklist, real build photos, and the $17 printable PDF offer.
 2. **`dj-pallet-table.html`** — a **free** standalone case study: the DJ Pallet Table build, start to finish, mapped to the 9-step process. It's the proof that drives the sale, styled after Gumroad's product-page UI/UX recolored to the AP palette. **Not part of the PDF.**
 
 The repo is **public on GitHub**, so the paid PDF is never committed.
@@ -15,7 +15,8 @@ The repo is **public on GitHub**, so the paid PDF is never committed.
 
 ## Stack
 
-- `index.html` + `dj-pallet-table.html` + `style.css` at repo root — the two pages Cloudflare Pages serves directly (no build command, output dir `/`).
+- `index.html` + `course.js` + `dj-pallet-table.html` + `style.css` at repo root — the pages Cloudflare Pages serves directly (no build command, output dir `/`).
+- `docs/assets/pallet-quizzes.js` — question data for the five interactive knowledge checks.
 - `docs/*.md` — the guide content. **Source of truth for the PDF**, and now cleanly mirrors it (4 files = the 4 PDF sections). Not published as a website. Kept render-ready so the method can later be published as **subscriber-gated web pages** (see Pending).
 - `internal/pdf-build/` — tooling that regenerates `guide.pdf` from `docs/*.md`. Run `bash internal/pdf-build/build.sh` (needs python-markdown, npx/mermaid-cli, Chrome, ghostscript). Output `guide.pdf` is gitignored — it lives only locally + on Gumroad (`gumroad.com/l/ajfnh`).
 
@@ -29,13 +30,13 @@ The repo is **public on GitHub**, so the paid PDF is never committed.
 
 - `index.html` and `dj-pallet-table.html` each carry their own SEO + OG meta; `docs/*.md` keep YAML front-matter (`title`/`description`) as PDF metadata
 - Mermaid diagrams pre-rendered to PNG for the PDF (`internal/pdf-build/*.png`)
-- Absolutely Plausible palette (`#3f7d9c` / `#1e2238` / `#6a4f9e` / `#eef0f2`) + Share Tech Mono
+- LBG warm editorial theme: oat paper, lettuce green, beet, grapefruit, Newsreader display type, Hanken Grotesk body type, and Share Tech Mono labels.
 - `dj-pallet-table.html` uses Gumroad's product-page UI/UX (flat brutalist: hard navy borders, offset drop-shadows, press-on-hover buttons) recolored to the AP palette — all scoped under `body.gr` in `style.css`
 - Licensed CC BY-NC 4.0
 
 ## Versioning
 
-- `VERSION` file at repo root. Current: `v0.5.0` (v0.5.0 split the DJ Pallet Table out of the PDF into its own free web page)
+- `VERSION` file at repo root. Current: `v0.7.0`.
 
 ## Pending
 
