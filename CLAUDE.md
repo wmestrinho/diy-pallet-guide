@@ -40,7 +40,6 @@ The repo is **public on GitHub**, so the paid PDF is never committed.
 
 ## Pending
 
-- [ ] **Cloudflare Pages: remove the `mkdocs build` command, set output dir `/`** — the live site still serves the old MkDocs build; the new pages won't go live until this changes (dashboard task)
 - [ ] Upload `guide.pdf` to the Gumroad product + finalize its description (the PDF is now the method only — no DJ chapter)
 - [ ] **`index.html` proof-line page count** — recompute after the next PDF rebuild and back-fill if you want a hard page count (currently described, not numbered)
 - [ ] Add the DJ Pallet Table install photos + build video (media exists, not yet uploaded) — drop photos into `docs/assets/`, run `ap-ops/scripts/sync_assets.py`, then fill the `INSTALL MEDIA SLOT` comment in `dj-pallet-table.html` with a `.vtl-media` grid; host the video on YouTube/Stream (never commit video files — public repo)
