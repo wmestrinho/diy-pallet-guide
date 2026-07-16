@@ -23,7 +23,7 @@ The repo is **public on GitHub**, so the paid PDF is never committed.
 ## Content
 
 - **PDF (paid):** `docs/index.md` — Start Here · `docs/basics.md` — sourcing, safety (HT vs MB), tools, prep · `docs/process.md` — the 9-step process (mermaid flow) · `docs/start-a-project-checklist.md` — Quick Start Checklist
-- **Web (free):** `dj-pallet-table.html` — the DJ Pallet Table worked example (33 photos, 8-milestone timeline). Its archived markdown source is `internal/dj-pallet-table.md` (no longer in `docs/`, since it's no longer in the PDF).
+- **Web (free):** `dj-pallet-table.html` — the DJ Pallet Table worked example (33 photos on a five-phase timeline: Source + Inspect / The Frame / Surface + Joinery / Finish + The Cutout / Install; each card shows a visible `✎` lesson strip). Its archived markdown source is `internal/dj-pallet-table.md` (no longer in `docs/`, since it's no longer in the PDF).
 - Photos in `docs/assets/` — all 33 from the DJ Pallet Table build; used by both `index.html` and `dj-pallet-table.html`.
 
 ## Conventions
@@ -36,13 +36,14 @@ The repo is **public on GitHub**, so the paid PDF is never committed.
 
 ## Versioning
 
-- `VERSION` file at repo root. Current: `v0.7.0`.
+- `VERSION` file at repo root. Current: `v0.8.0`. Update the footer `<p class="footer-version">` in the same commit.
 
 ## Pending
 
 - [ ] **Cloudflare Pages: remove the `mkdocs build` command, set output dir `/`** — the live site still serves the old MkDocs build; the new pages won't go live until this changes (dashboard task)
 - [ ] Upload `guide.pdf` to the Gumroad product + finalize its description (the PDF is now the method only — no DJ chapter)
 - [ ] **`index.html` proof-line page count** — recompute after the next PDF rebuild and back-fill if you want a hard page count (currently described, not numbered)
-- [ ] Add the DJ Pallet Table install photos + build video after the June 29 install — drop into the `install-slot` placeholder in `dj-pallet-table.html` and mark the timeline's Install step `done`
+- [ ] Add the DJ Pallet Table install photos + build video (media exists, not yet uploaded) — drop photos into `docs/assets/`, run `ap-ops/scripts/sync_assets.py`, then fill the `INSTALL MEDIA SLOT` comment in `dj-pallet-table.html` with a `.vtl-media` grid; host the video on YouTube/Stream (never commit video files — public repo)
+- [ ] Decide where the 7 community-event photos (`docs/assets/img-0380.jpg`, `img-6579`–`6588`: pallet canvas frames, mural painting, DIY pallet sign) belong — they are NOT DJ-table install photos
 - [ ] **Future: subscriber-gated web guide** — publish `docs/*.md` as web pages behind the planned monthly subscription (kept render-ready; no gate built yet)
 - [ ] Consider adding more worked examples as AP completes more pallet builds
