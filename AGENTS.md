@@ -1,6 +1,7 @@
 # AGENTS.md — diy-pallet-guide
 
 Canonical path
+- `C:/Users/wmest/Projects/diy-pallet-guide` on Windows
 - `/Users/wmestrinho/Workspace/Projects/diy-pallet-guide`
 
 Legacy path
@@ -20,7 +21,7 @@ Required baseline for AI agents
 
 Version rule
 - Single source of truth: `VERSION` unless this repo already documents another version source in `README.md` or `CLAUDE.md`.
-- Current baseline version: `v0.7.0`
+- Current baseline version: `v0.8.1`
 - Web UIs must visibly display the version.
 - Bump version for behavior/UI changes.
 

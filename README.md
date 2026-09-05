@@ -6,7 +6,7 @@ A project by **Absolutely Plausible**. Licensed [CC BY-NC 4.0](https://creativec
 
 ## Status
 
-`v0.7.0` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
+`v0.8.1` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
 
 ## Deployment
 
@@ -66,7 +66,9 @@ Needs python3 + python-markdown, npx (mermaid-cli), Google Chrome (headless prin
 
 ## AI Agent Handoff
 
-Canonical local path: `/Users/wmestrinho/Workspace/Projects/diy-pallet-guide`
+Canonical local paths:
+- `C:/Users/wmest/Projects/diy-pallet-guide` on Windows
+- `/Users/wmestrinho/Workspace/Projects/diy-pallet-guide` on Mac
 
 Before editing:
 - Read `CLAUDE.md` (project instructions) and `AGENTS.md`.
@@ -78,5 +80,5 @@ Conventions:
 - The paid PDF is never committed (gitignored).
 
 Version rule:
-- Current baseline: `v0.7.0` (source: `VERSION` at repo root).
+- Current baseline: `v0.8.1` (source: `VERSION` at repo root).
 - Bump on structural/content changes; keep `CLAUDE.md` and this README in sync.

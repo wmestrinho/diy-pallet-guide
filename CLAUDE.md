@@ -36,7 +36,7 @@ The repo is **public on GitHub**, so the paid PDF is never committed.
 
 ## Versioning
 
-- `VERSION` file at repo root. Current: `v0.8.0`. Update the footer `<p class="footer-version">` in the same commit.
+- `VERSION` file at repo root. Current: `v0.8.1`. Update the footer `<p class="footer-version">` in the same commit.
 
 ## Pending
 
