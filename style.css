@@ -1625,3 +1625,23 @@ body.gr {
     animation: none;
   }
 }
+
+/* Footer social icons — workspace Footer Standard (AP-owned public brand) */
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.footer-social a {
+  display: flex;
+  color: var(--muted, #77705f);
+}
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: var(--accent, #e4562e);
+}
+.footer-social svg {
+  width: 32px;
+  height: 32px;
+}
