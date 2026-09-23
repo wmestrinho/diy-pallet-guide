@@ -36,7 +36,8 @@ The repo is **public on GitHub**, so the paid PDF is never committed.
 
 ## Versioning
 
-- Versioning, CHANGELOG, LICENSE, and CI conventions: see `ap-ops-workspace/PROJECT-RULES.md`.
+- Versioning, CHANGELOG, LICENSE, and CI conventions: [`ap-ops/docs/PROJECT-RULES.md`](https://github.com/wmestrinho/ap-ops/blob/main/docs/PROJECT-RULES.md), canonical for every AP repo.
+- Read the workspace Pit Board for this repo at session start: `node ../ap-ops/scripts/pitboard.mjs read --answered --repo diy-pallet-guide` (see AGENTS.md).
 - Update the footer `<p class="footer-version">` in the same commit as any version bump.
 
 ## Pending
