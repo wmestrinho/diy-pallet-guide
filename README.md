@@ -6,7 +6,7 @@ A project by **Absolutely Plausible**. Licensed [CC BY-NC 4.0](https://creativec
 
 ## Status
 
-`v0.8.1` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
+`v0.8.3` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
 
 ## Deployment
 
@@ -80,5 +80,5 @@ Conventions:
 - The paid PDF is never committed (gitignored).
 
 Version rule:
-- Current baseline: `v0.8.1` (source: `VERSION` at repo root).
+- Current baseline: `v0.8.3` (source: `VERSION` at repo root).
 - Bump on structural/content changes; keep `CLAUDE.md` and this README in sync.
