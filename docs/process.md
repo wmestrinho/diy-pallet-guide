@@ -100,6 +100,6 @@ Pallet projects almost always take **longer than expected** — deconstruction a
 
 ---
 
-See the whole process applied to a real build: **[Worked Example — DJ Pallet Table →](dj-pallet-table.md)**
+See the whole process applied to a real build — the **DJ Pallet Table**, documented free at **[diy.recyclopedia.cc/dj-pallet-table](https://diy.recyclopedia.cc/dj-pallet-table.html)**.
 
 About to start your own? Run the **[Quick Start Checklist →](start-a-project-checklist.md)** first.

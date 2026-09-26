@@ -66,7 +66,7 @@ The build maps cleanly onto the [9-step process](process.md). Here it is, step b
 Pallets collected and checked for safety before anything else. Raw pallets, stacked, before a single cut — every one inspected against the [safety flow](basics.md#safety-which-pallets-are-safe).
 
 <div class="photo-grid" markdown="1">
-![Raw reclaimed pallets stacked before the build begins](assets/IMG_4768.jpg)
+![Raw reclaimed pallets stacked before the build begins](assets/reclaimed-pallets-before-build.jpg)
 ![Pallet selection on-site](assets/IMG_4783.jpg)
 ![More raw material — full stack before work begins](assets/IMG_4784.jpg)
 </div>
@@ -176,7 +176,7 @@ Table fully assembled, surfaces refined, cutout marked. What's left is the final
 <div class="photo-grid" markdown="1">
 ![The near-final DJ Pallet Table](assets/IMG_4960.jpg)
 ![Near-final — side view](assets/IMG_4961.jpg)
-![Near-final state — table complete except for mixer recess](assets/IMG_4963.jpg)
+![Near-final state — table complete except for mixer recess](assets/dj-pallet-table-finished.jpg)
 </div>
 
 **Takeaway:** a build reaches "near-final" before it reaches "done." The last 10% — a precise cut, a finish coat, the install — is its own phase. Don't rush it.

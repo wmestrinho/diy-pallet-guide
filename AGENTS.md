@@ -1,6 +1,7 @@
 # AGENTS.md — diy-pallet-guide
 
 Canonical path
+- `C:/Users/wmest/Projects/diy-pallet-guide` on Windows
 - `/Users/wmestrinho/Workspace/Projects/diy-pallet-guide`
 
 Legacy path
@@ -18,17 +19,27 @@ Required baseline for AI agents
 - Keep a visible version rule for web UIs.
 - Run validation before commit.
 
+Pit Board — owner decisions (read at session start)
+- Every question only Luiz can answer lives on the workspace-wide **AP Ops Pit
+  Board** (ops.absolutelyplausible.com → Pit Board). Read this repo's items
+  before planning work:
+  `node ../ap-ops/scripts/pitboard.mjs read --answered --repo diy-pallet-guide`
+  (Seat 1 reads D1 directly; Seats 2–3 use the seat's Access service token —
+  `ap-ops/docs/SATELLITE-OFFICE.md` § Board access).
+- Act only on what he chose. Close what you finish, in the same commit as the
+  work: `node ../ap-ops/scripts/pitboard.mjs close <key> "<what actually happened>"`.
+- File new questions there (`pitboard.mjs file <item.json>`, `"repo": "diy-pallet-guide"`),
+  never in chat. Never invent an answer he has not given.
+- Rules: `ap-ops/docs/PITBOARD.md`.
+
 Version rule
-- Single source of truth: `VERSION` unless this repo already documents another version source in `README.md` or `CLAUDE.md`.
-- Current baseline version: `v0.3.0`
-- Web UIs must visibly display the version.
-- Bump version for behavior/UI changes.
+- Versioning, CHANGELOG, LICENSE, and CI conventions: [`ap-ops/docs/PROJECT-RULES.md`](https://github.com/wmestrinho/ap-ops/blob/main/docs/PROJECT-RULES.md) — canonical for every AP repo.
 
 Deployment
-- MkDocs static site. Build with `mkdocs build`; deploy according to repo/Cloudflare Pages settings.
+- Static HTML/CSS/JS site. Cloudflare Pages serves the repository root with no build command.
 
 Validation
-- Run: `python3 scripts/validate_agent_baseline.py`
+- Run: `python internal/scripts/validate_agent_baseline.py`
 - Also run any project-specific test/build/validation commands documented in `README.md`, `CLAUDE.md`, package scripts, or CI workflows.
 
 Coordination warning

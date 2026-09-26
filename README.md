@@ -1,61 +1,84 @@
 # DIY Pallet Project Guide
 
-A practical, open guide to building things from reclaimed pallets — sourcing, safety, tools, the step-by-step process, and a full worked example.
+A practical, interactive course for building with reclaimed pallets: six free modules, five knowledge checks, saved progress, a Quick Start Checklist, and a real worked example. A printable $17 PDF is available separately.
 
-A guide by **Absolutely Plausible**. Licensed [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+A project by **Absolutely Plausible**. Licensed [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Status
 
-`v0.2.0 beta` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
+`v0.8.3` — live at <https://diy.recyclopedia.cc/> (Cloudflare Pages). See `CLAUDE.md` for pending items.
 
-## Local development
+## Deployment
 
-```bash
-pip install -r requirements.txt
-mkdocs serve
+Cloudflare Pages serves the repository root with no build command. Pushes to
+`main` deploy automatically. The Pages output directory is `/`.
+
+## Validation
+
+```sh
+node --check course.js
+node --check docs/assets/pallet-quizzes.js
+python internal/scripts/validate_agent_baseline.py
 ```
 
-Open `http://localhost:8000`.
+## What's here
 
-## Structure
+Two hand-written HTML pages, served directly by Cloudflare Pages (no build step, output dir `/`):
 
-Published pages (in `docs/`, visitor-facing):
+- **`index.html`** — interactive six-module course and the $17 printable-guide offer.
+- **`course.js`** — saved progress, checklist state, mobile navigation, and interactive quizzes.
+- **`dj-pallet-table.html`** — free standalone case study: the DJ Pallet Table build, start to finish. Gumroad-style UI/UX recolored to the AP palette.
+- **`style.css`** — shared LBG warm theme and responsive styles for both pages.
+
+The **paid PDF** (the reusable method only) is built from `docs/*.md`:
 
 - `docs/index.md` — Start here
-- `docs/basics.md` — Sourcing, safety, tools, wood prep
+- `docs/basics.md` — Sourcing, safety (HT vs MB), tools, wood prep
 - `docs/process.md` — The 9-step process
-- `docs/dj-pallet-table.md` — Worked example
 - `docs/start-a-project-checklist.md` — Quick pre-build checklist
 
-Internal authoring docs (in `internal/`, kept in the repo, not published):
+`docs/` cleanly mirrors the PDF. The DJ Pallet Table worked example is **not** in the PDF — it lives at `dj-pallet-table.html`, with its archived markdown source at `internal/dj-pallet-table.md`.
 
-- `internal/worked-example-template.md` — Standard template for future worked examples
-- `internal/project-scope-template.md` — Client scope / valuation template
+## Local preview
+
+No build step — open the pages directly:
+
+```bash
+open index.html          # or dj-pallet-table.html
+```
+
+## Rebuilding the PDF
+
+```bash
+bash internal/pdf-build/build.sh
+```
+
+Needs python3 + python-markdown, npx (mermaid-cli), Google Chrome (headless print), and ghostscript. Output `guide.pdf` is **gitignored** — the repo is public, so the paid PDF lives only locally + on Gumroad (`gumroad.com/l/ajfnh`).
+
+## Internal / archived
+
+- `internal/dj-pallet-table.md` — archived markdown source of the web case study
+- `internal/pdf-build/` — PDF build tooling + pre-rendered diagrams
+- `internal/worked-example-template.md`, `internal/project-scope-template.md` — authoring templates
+- `internal/mkdocs.yml`, `internal/overrides/`, `internal/requirements.txt` — retired MkDocs setup (reference only, not served)
 
 ---
 
 ## AI Agent Handoff
 
-Canonical local path:
-- `/Users/wmestrinho/Workspace/Projects/diy-pallet-guide`
-
-Legacy local path:
-- `/Users/wmestrinho/.openclaw/workspace/projects/diy-pallet-guide`
+Canonical local paths:
+- `C:/Users/wmest/Projects/diy-pallet-guide` on Windows
+- `/Users/wmestrinho/Workspace/Projects/diy-pallet-guide` on Mac
 
 Before editing:
-- Read `AGENTS.md`.
+- Read `CLAUDE.md` (project instructions) and `AGENTS.md`.
 - Check `git status --short --branch`.
-- Preserve any project-specific instructions in `CLAUDE.md`.
 
-Deployment notes:
-- MkDocs static site. Build with `mkdocs build`; deploy according to repo/Cloudflare Pages settings.
+Conventions:
+- Plain hand-written HTML + CSS. No framework, no build step for the site.
+- LBG warm editorial theme: Newsreader + Hanken Grotesk, with Share Tech Mono reserved for labels.
+- The paid PDF is never committed (gitignored).
 
 Version rule:
-- Current baseline version: `v0.2.0 beta`
-- Keep version source documented.
-- Web UIs must visibly display the version.
-
-Validation:
-- Run `python3 scripts/validate_agent_baseline.py`.
-- Also run project-specific tests/builds when present.
-
+- Current baseline: `v0.8.3` (source: `VERSION` at repo root).
+- Bump on structural/content changes; keep `CLAUDE.md` and this README in sync.
