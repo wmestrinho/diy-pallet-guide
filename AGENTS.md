@@ -44,3 +44,17 @@ Validation
 
 Coordination warning
 - Multiple AI agents may be working across this workspace. Do not run destructive git commands, delete files, rebase, or force-push without checking status and coordinating with Luiz.
+
+Marketing audit (2026-09-29)
+- 2026-09-29 — Seat 2 marketing audit: `docs/marketing/MARKETING-AUDIT-2026-09-29.md`
+  (19 findings, MKT-01…MKT-19, re-check commands in §5).
+- Next agent, Tier 1 (just do, in priority order): MKT-01 restore the paid-PDF block in
+  `.gitignore` (P0), MKT-03 add `404.html`, MKT-10 image weight on the DJ page, MKT-11/12/13
+  meta + JSON-LD + extensionless URLs, MKT-19. MKT-04 (stop serving internals) waits on
+  the host decision in MKT-02.
+- Waiting on Luiz (Tier 2/3): MKT-02 why production is stuck at v0.8.1 (Cloudflare
+  dashboard), MKT-05 Gumroad listing rewrite, MKT-06 canonical home across the three
+  domains, MKT-07 paid-offer differentiation, MKT-08/14/17 public copy and visuals,
+  MKT-09/15/16/18 tracking, brand, email capture, Pinterest/YouTube.
+- Note: under the current Pages deploy, repo `.md` files (including this one and the
+  audit) are publicly served; see MKT-04.
